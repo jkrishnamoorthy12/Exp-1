@@ -28,10 +28,67 @@ manipulation and analysis in Python.
     `v` is an eigenvector.
 
 ## Coding
+import numpy as np
 
+# Define matrix A and vector b
+A = np.array([[4, 2],
+              [1, 3]])
+
+b = np.array([10, 8])
+
+# Calculate transpose
+transpose = np.transpose(A)
+
+# Calculate inverse
+inverse = np.linalg.inv(A)
+
+# Solve linear equations
+solution = np.linalg.solve(A, b)
+
+# Calculate eigenvalues and eigenvectors
+eigenvalues, eigenvectors = np.linalg.eig(A)
+
+# Display results
+print("Original Matrix A:")
+print(A)
+
+print("\nTranspose of A:")
+print(transpose)
+
+print("\nInverse of A:")
+print(inverse)
+
+print("\nSolution of Linear Equation:")
+print(solution)
+
+print("\nEigenvalues:")
+print(eigenvalues)
+
+print("\nEigenvectors:")
+print(eigenvectors)
 
 ## Output
+Original Matrix A:
+[[4 2]  
+ [1 3]]  
 
+Transpose of A:    
+[[4 1]  
+ [2 3]]  
+
+Inverse of A:  
+[[ 0.3 -0.2]   
+ [-0.1  0.4]]  
+
+Solution of Linear Equation:    
+[1.4 2.2]  
+
+Eigenvalues:  
+[5. 2.]
+
+Eigenvectors:    
+[[ 0.89442719 -0.70710678]  
+ [ 0.4472136   0.70710678]]  
 
 ## Result
 
